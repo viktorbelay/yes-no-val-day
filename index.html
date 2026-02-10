@@ -63,24 +63,7 @@
     const message = document.getElementById("message");
     const yesBtn = document.getElementById("yesBtn");
     const noBtn = document.getElementById("noBtn");
-    const container = document.querySelector(".buttons");
 
-    yesBtn.onclick = () => {
-      message.textContent = "YAY 🎉";
-    };
-
-    noBtn.onmousemove = () => {
-      const containerRect = container.getBoundingClientRect();
-      const buttonRect = noBtn.getBoundingClientRect();
-
-      const maxX = containerRect.width - buttonRect.width;
-      const maxY = containerRect.height - buttonRect.height;
-
-      const randomX = Math.random() * maxX;
-      const randomY = Math.random() * maxY;
-
-      noBtn.style.left = `${randomX}px`;
-      noBtn.style.top = `${randomY}px`;
     };
   </script>
 
